@@ -13,4 +13,17 @@ def OCR77():
         position += 1
         print(seq)
 OCR77()
-    
+
+"""
+teacher solution:
+def finonachiSolver(num):
+    """"takes a num value is is the index of the fibo number we want. input of 10 will give us the 10th term""""
+    if num == 0:
+        return 0
+    elif num == 1:
+        return 1
+    elif num > 1:
+        return fibonachiSolver(num-1) + fibonachiSolver(num-2)
+
+print(fibonachiSolver(10))
+"""
