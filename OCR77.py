@@ -25,5 +25,11 @@ def finonachiSolver(num):
     elif num > 1:
         return fibonachiSolver(num-1) + fibonachiSolver(num-2)
 
-print(fibonachiSolver(10))
+count = 0
+fiblen = 0
+while fiblen < 1000:
+    fibnum = fibonachiSolver(count)
+    fiblen = len(str(fibnum))
+    count += 1
+print(count)
 """
